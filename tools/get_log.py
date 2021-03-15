@@ -18,7 +18,7 @@ class GetLog:
             cls.__logger = logging.getLogger()
             # 修改默认级别
             cls.__logger.setLevel(logging.INFO)
-            log_path = BASE_PATH + os.sep + "log" + os.sep + "{}.log".format(time.strftime("%Y_%m_%d %H_%M_%S"))
+            log_path = BASE_PATH + os.sep + "log" + os.sep + "html.log"
             # 获取处理器
             th = logging.handlers.TimedRotatingFileHandler(filename=log_path,
                                                            when="midnight",
