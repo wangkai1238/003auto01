@@ -1,0 +1,13 @@
+[32mINFO    [0m root:base.py:12 正在初始化driver: <selenium.webdriver.chrome.webdriver.WebDriver (session="1a09645de120cbba6a981de673284a6f")>
+[32mINFO    [0m root:page_lp_login.py:40 正在调用自媒体登录业务方法，用户名：15628866863 密码：8866863
+[32mINFO    [0m root:base.py:23 正在查找元素：('css selector', '#username')
+[32mINFO    [0m root:base.py:37 正在对：('css selector', '#username') 元素执行清空操作！
+[32mINFO    [0m root:base.py:40 正在对：('css selector', '#username') 元素执行输入:15628866863 操作！
+[32mINFO    [0m root:base.py:23 正在查找元素：('css selector', '#password-o')
+[32mINFO    [0m root:base.py:37 正在对：('css selector', '#password-o') 元素执行清空操作！
+[32mINFO    [0m root:base.py:40 正在对：('css selector', '#password-o') 元素执行输入:8866863 操作！
+[32mINFO    [0m root:base.py:47 正在对：('css selector', '#loginBtn') 元素执行点击操作！
+[32mINFO    [0m root:base.py:23 正在查找元素：('css selector', '#loginBtn')
+[32mINFO    [0m root:base.py:12 正在初始化driver: <selenium.webdriver.chrome.webdriver.WebDriver (session="1a09645de120cbba6a981de673284a6f")>
+[32mINFO    [0m root:base.py:47 正在对：('xpath', '/html/body/header/div/div[2]/div[2]') 元素执行点击操作！
+[32mINFO    [0m root:base.py:23 正在查找元素：('xpath', '/html/body/header/div/div[2]/div[2]')

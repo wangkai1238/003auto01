@@ -1,0 +1,57 @@
+{
+  "name": "test_apply_data[expect0]",
+  "status": "passed",
+  "attachments": [
+    {
+      "name": "log",
+      "source": "11d112db-6307-4b51-9af6-2bf8acc01a6c-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "expect",
+      "value": "('请先完成实名认证后再操作',)"
+    }
+  ],
+  "start": 1615643677361,
+  "stop": 1615643679045,
+  "uuid": "258157e9-b4a9-4f2d-88bb-8e61d99bafa6",
+  "historyId": "7b8b5bd64e078c795fdd9a1f086d2dd1",
+  "testCaseId": "9dda7dd57086368af497cd4f63b7fe80",
+  "fullName": "scripts.test02_apply_data.TestApplyData#test_apply_data",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "scripts"
+    },
+    {
+      "name": "suite",
+      "value": "test02_apply_data"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestApplyData"
+    },
+    {
+      "name": "host",
+      "value": "LAPTOP-O96LCF4D"
+    },
+    {
+      "name": "thread",
+      "value": "12316-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "scripts.test02_apply_data"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "name": "test_apply_data[expect0]",
+  "status": "broken",
+  "statusDetails": {
+    "message": "AttributeError: 'PageLpLogin' object has no attribute 'page_input_code'",
+    "trace": "self = <class 'scripts.test02_apply_data.TestApplyData'>\n\n    def setup_class(self):\n        # 1. 获取driver\n        driver = GetDriver.get_web_driver(page.url_lp)\n        # 2. 获取统一入口类对象\n        self.page_in = PageIn(driver)\n        # 3. 获取PageMpLogin对象并调用成功登录依赖方法\n>       self.page_in.page_get_PageLpLogin().page_mp_login_success()\n\ntest02_apply_data.py:21: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <page.page_lp_login.PageLpLogin object at 0x00000204B2125F88>\nusername = '13812345678', password = '246810'\n\n    def page_mp_login_success(self, username=\"13812345678\", password=\"246810\"):\n        log.info(\"正在调用自媒体登录业务方法，用户名：{} 密码：{}\".format(username, password))\n        \"\"\"提示：调用相同页面操作步骤，跨页面暂时不考虑\"\"\"\n        self.page_input_username(username)\n>       self.page_input_code(password)\nE       AttributeError: 'PageLpLogin' object has no attribute 'page_input_code'\n\n..\\page\\page_lp_login.py:43: AttributeError"
+  },
+  "attachments": [
+    {
+      "name": "log",
+      "source": "94b94232-d7b7-4a51-94f9-82f0ce0d65c0-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "expect",
+      "value": "('请先完成实名认证后再操作',)"
+    }
+  ],
+  "start": 1615561238257,
+  "stop": 1615561238257,
+  "uuid": "b8d61131-86f9-43e9-822b-9e98bc1a8d19",
+  "historyId": "7b8b5bd64e078c795fdd9a1f086d2dd1",
+  "testCaseId": "9dda7dd57086368af497cd4f63b7fe80",
+  "fullName": "scripts.test02_apply_data.TestApplyData#test_apply_data",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "scripts"
+    },
+    {
+      "name": "suite",
+      "value": "test02_apply_data"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestApplyData"
+    },
+    {
+      "name": "host",
+      "value": "LAPTOP-O96LCF4D"
+    },
+    {
+      "name": "thread",
+      "value": "9892-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "scripts.test02_apply_data"
+    }
+  ]
+}

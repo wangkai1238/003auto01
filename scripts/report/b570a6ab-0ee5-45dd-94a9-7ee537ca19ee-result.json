@@ -1,0 +1,61 @@
+{
+  "name": "test_apply_data[expect0]",
+  "status": "broken",
+  "statusDetails": {
+    "message": "AttributeError: module 'allure' has no attribute 'attach_type'",
+    "trace": "self = <scripts.test02_apply_data.TestApplyData object at 0x00000191B1688C48>\nexpect = ('请先完成实名认证后再操作',)\n\n    @pytest.mark.parametrize(\"expect\", read_yaml(\"apply_data.yaml\"))\n    # @pytest.fixture()\n    def test_apply_data(self, expect):\n        print(\"前置条件，请先登录\")\n        # 调用发布文章业务方法\n        self.applydata.page_apply_data()\n        try:\n            # 断言\n>           assert expect == self.applydata.page_get_autonym_dialog()\n\ntest02_apply_data.py:35: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <page.page_apply_data.PageApplyData object at 0x00000191B15AA108>\n\n    def page_get_autonym_dialog(self):\n>       return self.base_get_text(page.autonym_dialog_text)\n\n..\\page\\page_apply_data.py:24: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <page.page_apply_data.PageApplyData object at 0x00000191B15AA108>\nloc = ('css selector', '.dialog-body p')\n\n    def base_get_text(self, loc):\n        \"\"\"\n        :param loc: 元素定位信息\n        :return: 返回元素的文本值\n        \"\"\"\n        log.info(\"正在对：{} 元素获取文本操作！，获取的文本值：{}\".format(\n>           loc, self.base_find(loc).text))\n\n..\\base\\base.py:57: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <page.page_apply_data.PageApplyData object at 0x00000191B15AA108>\nloc = ('css selector', '.dialog-body p'), timeout = 10, poll = 0.5\n\n    def base_find(self, loc, timeout=10, poll=0.5):\n        \"\"\"\n        :param loc: 格式为列表或元祖，内容：元素定位信息使用By类\n        :param timeout: 查找元素超时时间，默认 30秒\n        :param poll: 查找元素频率 默认为0.5\n        :return: 元素\n        \"\"\"\n        log.info(\"正在查找元素：{}\".format(loc))\n        return (WebDriverWait(self.driver,\n                              timeout=timeout,\n                              poll_frequency=poll)\n>               .until(lambda x: x.find_element(*loc)))\n\n..\\base\\base.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"0881a8a98878857d2a3991f619aa9e8f\")>\nmethod = <function Base.base_find.<locals>.<lambda> at 0x00000191B153FD38>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nC:\\Python37\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException\n\nDuring handling of the above exception, another exception occurred:\n\nself = <scripts.test02_apply_data.TestApplyData object at 0x00000191B1688C48>\nexpect = ('请先完成实名认证后再操作',)\n\n    @pytest.mark.parametrize(\"expect\", read_yaml(\"apply_data.yaml\"))\n    # @pytest.fixture()\n    def test_apply_data(self, expect):\n        print(\"前置条件，请先登录\")\n        # 调用发布文章业务方法\n        self.applydata.page_apply_data()\n        try:\n            # 断言\n            assert expect == self.applydata.page_get_autonym_dialog()\n        except Exception as e:\n            # 日志\n            log.error(e)\n            # 截图\n>           self.applydata.base_get_img()\n\ntest02_apply_data.py:40: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\base\\base.py:67: in base_get_img\n    self.__base_write_img()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <page.page_apply_data.PageApplyData object at 0x00000191B15AA108>\n\n    def __base_write_img(self):\n        # 1. 获取图片文件流\n        with open(self.file_name, \"rb\") as f:\n            # 2. 调用allure.attach附加方法\n>           allure.attach(\"错误原因：\", f.read(), allure.attach_type.PNG)\nE           AttributeError: module 'allure' has no attribute 'attach_type'\n\n..\\base\\base.py:73: AttributeError"
+  },
+  "attachments": [
+    {
+      "name": "log",
+      "source": "e0cb3fa6-d2c7-4410-88ed-20965e44b1a3-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "expect",
+      "value": "('请先完成实名认证后再操作',)"
+    }
+  ],
+  "start": 1615562459849,
+  "stop": 1615562470703,
+  "uuid": "aab98b66-fcdc-4427-812b-41bc158bd248",
+  "historyId": "7b8b5bd64e078c795fdd9a1f086d2dd1",
+  "testCaseId": "9dda7dd57086368af497cd4f63b7fe80",
+  "fullName": "scripts.test02_apply_data.TestApplyData#test_apply_data",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "scripts"
+    },
+    {
+      "name": "suite",
+      "value": "test02_apply_data"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestApplyData"
+    },
+    {
+      "name": "host",
+      "value": "LAPTOP-O96LCF4D"
+    },
+    {
+      "name": "thread",
+      "value": "14136-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "scripts.test02_apply_data"
+    }
+  ]
+}

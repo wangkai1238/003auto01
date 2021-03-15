@@ -1,0 +1,34 @@
+{
+  "uuid": "bf6590ba-3bed-4f35-ba3c-bd0735271b44",
+  "children": [
+    "b8d61131-86f9-43e9-822b-9e98bc1a8d19"
+  ],
+  "befores": [
+    {
+      "name": "xunit_setup_class_fixture_TestApplyData",
+      "status": "broken",
+      "statusDetails": {
+        "message": "AttributeError: 'PageLpLogin' object has no attribute 'page_input_code'\n",
+        "trace": "  File \"C:\\Python37\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"C:\\Python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 1126, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"C:\\Python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 925, in call_fixture_func\n    fixture_result = next(generator)\n  File \"C:\\Python37\\lib\\site-packages\\_pytest\\python.py\", line 811, in xunit_setup_class_fixture\n    _call_with_optional_argument(func, self.obj)\n  File \"C:\\Python37\\lib\\site-packages\\_pytest\\python.py\", line 739, in _call_with_optional_argument\n    func(arg)\n  File \"F:\\DDLGY2008\\003auto\\scripts\\test02_apply_data.py\", line 21, in setup_class\n    self.page_in.page_get_PageLpLogin().page_mp_login_success()\n  File \"F:\\DDLGY2008\\003auto\\page\\page_lp_login.py\", line 43, in page_mp_login_success\n    self.page_input_code(password)\n"
+      },
+      "steps": [
+        {
+          "name": "第一步:输入用户名",
+          "status": "passed",
+          "parameters": [
+            {
+              "name": "username",
+              "value": "'13812345678'"
+            }
+          ],
+          "start": 1615561240761,
+          "stop": 1615561240880
+        }
+      ],
+      "start": 1615561238262,
+      "stop": 1615561240880
+    }
+  ],
+  "start": 1615561238262,
+  "stop": 1615561240965
+}

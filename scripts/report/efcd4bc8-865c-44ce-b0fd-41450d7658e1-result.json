@@ -1,0 +1,61 @@
+{
+  "name": "test_apply_data[expect0]",
+  "status": "broken",
+  "statusDetails": {
+    "message": "AttributeError: 'TestApplyData' object has no attribute 'page_click_find'",
+    "trace": "self = <scripts.test02_apply_data.TestApplyData object at 0x00000267A9777888>\nexpect = ('请先完成实名认证后再操作',)\n\n    @pytest.mark.parametrize(\"expect\", read_yaml(\"apply_data.yaml\"))\n    def test_apply_data(self, expect):\n    \n        # 调用发布文章业务方法\n        self.applydata.page_apply_data()\n        # 3. 点击查询按钮\n>       self.page_click_find()\nE       AttributeError: 'TestApplyData' object has no attribute 'page_click_find'\n\ntest02_apply_data.py:35: AttributeError"
+  },
+  "attachments": [
+    {
+      "name": "log",
+      "source": "97b3680e-5735-4cbc-8ea1-4fc5482863d4-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "expect",
+      "value": "('请先完成实名认证后再操作',)"
+    }
+  ],
+  "start": 1615639534527,
+  "stop": 1615639534528,
+  "uuid": "17c38b2b-174d-4513-a3e7-3d77a4c77d14",
+  "historyId": "7b8b5bd64e078c795fdd9a1f086d2dd1",
+  "testCaseId": "9dda7dd57086368af497cd4f63b7fe80",
+  "fullName": "scripts.test02_apply_data.TestApplyData#test_apply_data",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "scripts"
+    },
+    {
+      "name": "suite",
+      "value": "test02_apply_data"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestApplyData"
+    },
+    {
+      "name": "host",
+      "value": "LAPTOP-O96LCF4D"
+    },
+    {
+      "name": "thread",
+      "value": "7380-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "scripts.test02_apply_data"
+    }
+  ]
+}
