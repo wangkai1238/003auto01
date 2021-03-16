@@ -1,0 +1,61 @@
+{
+  "name": "test_apply_data[expect0]",
+  "status": "broken",
+  "statusDetails": {
+    "message": "selenium.common.exceptions.TimeoutException: Message:",
+    "trace": "self = <scripts.test02_apply_data.TestApplyData object at 0x0000017CE9002248>, expect = ('请先完成实名认证后再操作',)\n\n    @pytest.mark.parametrize(\"expect\", read_yaml(\"apply_data.yaml\"))\n    def test_apply_data(self, expect):\n    \n        # 调用发布文章业务方法\n>       self.applydata.page_apply_data()\n\nscripts\\test02_apply_data.py:33: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npage\\page_apply_data.py:56: in page_apply_data\n    self.page_click_nav()\npage\\page_apply_data.py:11: in page_click_nav\n    self.base_click(page.nav)\nbase\\base.py:49: in base_click\n    self.base_find(loc).click()\nbase\\base.py:27: in base_find\n    .until(lambda x: x.find_element(*loc)))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"15c86c6bb9cf6db700dc6aa661b61152\")>\nmethod = <function Base.base_find.<locals>.<lambda> at 0x0000017CE8F36168>, message = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nc:\\python37\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException"
+  },
+  "attachments": [
+    {
+      "name": "log",
+      "source": "3587edb0-d40f-4c57-aafc-1c224b94a662-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "expect",
+      "value": "('请先完成实名认证后再操作',)"
+    }
+  ],
+  "start": 1615874858558,
+  "stop": 1615874868922,
+  "uuid": "8e29967d-cefe-43e9-aea7-bcd9c1296c71",
+  "historyId": "7b8b5bd64e078c795fdd9a1f086d2dd1",
+  "testCaseId": "9dda7dd57086368af497cd4f63b7fe80",
+  "fullName": "scripts.test02_apply_data.TestApplyData#test_apply_data",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "scripts"
+    },
+    {
+      "name": "suite",
+      "value": "test02_apply_data"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestApplyData"
+    },
+    {
+      "name": "host",
+      "value": "LAPTOP-O96LCF4D"
+    },
+    {
+      "name": "thread",
+      "value": "6828-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "scripts.test02_apply_data"
+    }
+  ]
+}

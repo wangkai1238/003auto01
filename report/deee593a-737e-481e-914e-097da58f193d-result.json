@@ -1,0 +1,129 @@
+{
+  "name": "test_lp_login[15628866863-8866863-个人中心]",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "第五步：组合操作方法",
+      "status": "passed",
+      "steps": [
+        {
+          "name": "第一步:输入用户名",
+          "status": "passed",
+          "parameters": [
+            {
+              "name": "username",
+              "value": "'15628866863'"
+            }
+          ],
+          "start": 1615874849002,
+          "stop": 1615874849130
+        },
+        {
+          "name": "第二步：输入密码",
+          "status": "passed",
+          "parameters": [
+            {
+              "name": "password",
+              "value": "'8866863'"
+            }
+          ],
+          "start": 1615874849130,
+          "stop": 1615874849288
+        },
+        {
+          "name": "第三步：点击登陆按钮",
+          "status": "passed",
+          "start": 1615874849288,
+          "stop": 1615874853049
+        }
+      ],
+      "parameters": [
+        {
+          "name": "username",
+          "value": "'15628866863'"
+        },
+        {
+          "name": "password",
+          "value": "'8866863'"
+        }
+      ],
+      "start": 1615874849001,
+      "stop": 1615874853049
+    },
+    {
+      "name": "第四步：获取用户登录昵称",
+      "status": "passed",
+      "start": 1615874853049,
+      "stop": 1615874853091
+    }
+  ],
+  "attachments": [
+    {
+      "name": "log",
+      "source": "3f38ffaa-6df1-4b7e-953b-3c54748f11a8-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "username",
+      "value": "'15628866863'"
+    },
+    {
+      "name": "password",
+      "value": "'8866863'"
+    },
+    {
+      "name": "expect",
+      "value": "'个人中心'"
+    }
+  ],
+  "start": 1615874849001,
+  "stop": 1615874853091,
+  "uuid": "5c23f643-d204-4549-8215-6bbcfacc5c75",
+  "historyId": "752a93834e645bb3319fb07eee9ae0ab",
+  "testCaseId": "c1645915604d7cbd6e06576299b79600",
+  "fullName": "scripts.test01_lp_login.TestLpLogin#test_lp_login",
+  "labels": [
+    {
+      "name": "epic",
+      "value": "定义项目、当有多个项目是使用。往下是feature"
+    },
+    {
+      "name": "feature",
+      "value": "TestLpLogin登陆测试模块"
+    },
+    {
+      "name": "parentSuite",
+      "value": "scripts"
+    },
+    {
+      "name": "suite",
+      "value": "test01_lp_login"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestLpLogin"
+    },
+    {
+      "name": "host",
+      "value": "LAPTOP-O96LCF4D"
+    },
+    {
+      "name": "thread",
+      "value": "6828-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "scripts.test01_lp_login"
+    }
+  ]
+}

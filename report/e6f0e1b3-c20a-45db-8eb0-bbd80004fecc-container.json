@@ -1,0 +1,56 @@
+{
+  "uuid": "79fd5b00-caed-4f5b-9615-4a00c7b9e0cd",
+  "children": [
+    "8e29967d-cefe-43e9-aea7-bcd9c1296c71"
+  ],
+  "befores": [
+    {
+      "name": "xunit_setup_class_fixture_TestApplyData",
+      "status": "passed",
+      "steps": [
+        {
+          "name": "第一步:输入用户名",
+          "status": "passed",
+          "parameters": [
+            {
+              "name": "username",
+              "value": "'15628866863'"
+            }
+          ],
+          "start": 1615874857211,
+          "stop": 1615874857347
+        },
+        {
+          "name": "第二步：输入密码",
+          "status": "passed",
+          "parameters": [
+            {
+              "name": "password",
+              "value": "'8866863'"
+            }
+          ],
+          "start": 1615874857347,
+          "stop": 1615874857443
+        },
+        {
+          "name": "第三步：点击登陆按钮",
+          "status": "passed",
+          "start": 1615874857443,
+          "stop": 1615874858557
+        }
+      ],
+      "start": 1615874855335,
+      "stop": 1615874858557
+    }
+  ],
+  "afters": [
+    {
+      "name": "xunit_setup_class_fixture_TestApplyData::0",
+      "status": "passed",
+      "start": 1615874869124,
+      "stop": 1615874871307
+    }
+  ],
+  "start": 1615874855335,
+  "stop": 1615874871307
+}
