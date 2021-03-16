@@ -1,0 +1,26 @@
+2021-03-16 14:07:28,998 INFO [base.py(__init__:12)] - 正在初始化driver: <selenium.webdriver.chrome.webdriver.WebDriver (session="8d564e25b48cd7c02412ff782eac26d1")>
+2021-03-16 14:07:29,000 INFO [page_lp_login.py(page_lp_login:34)] - 正在调用前台页面登录业务方法，用户名：15628866863 密码：8866863
+2021-03-16 14:07:29,001 INFO [base.py(base_find:23)] - 正在查找元素：('css selector', '#username')
+2021-03-16 14:07:29,013 INFO [base.py(base_input:37)] - 正在对：('css selector', '#username') 元素执行清空操作！
+2021-03-16 14:07:29,058 INFO [base.py(base_input:40)] - 正在对：('css selector', '#username') 元素执行输入:15628866863 操作！
+2021-03-16 14:07:29,129 INFO [base.py(base_find:23)] - 正在查找元素：('css selector', '#password-o')
+2021-03-16 14:07:29,141 INFO [base.py(base_input:37)] - 正在对：('css selector', '#password-o') 元素执行清空操作！
+2021-03-16 14:07:29,177 INFO [base.py(base_input:40)] - 正在对：('css selector', '#password-o') 元素执行输入:8866863 操作！
+2021-03-16 14:07:29,288 INFO [base.py(base_click:47)] - 正在对：('css selector', '#loginBtn') 元素执行点击操作！
+2021-03-16 14:07:29,288 INFO [base.py(base_find:23)] - 正在查找元素：('css selector', '#loginBtn')
+2021-03-16 14:07:33,048 INFO [base.py(base_find:23)] - 正在查找元素：('css selector', '.header-status>a[href="https://dashboard.juhe.cn/home"]')
+2021-03-16 14:07:33,075 INFO [base.py(base_get_text:57)] - 正在对：('css selector', '.header-status>a[href="https://dashboard.juhe.cn/home"]') 元素获取文本操作！，获取的文本值：个人中心
+2021-03-16 14:07:33,075 INFO [base.py(base_find:23)] - 正在查找元素：('css selector', '.header-status>a[href="https://dashboard.juhe.cn/home"]')
+2021-03-16 14:07:37,211 INFO [base.py(__init__:12)] - 正在初始化driver: <selenium.webdriver.chrome.webdriver.WebDriver (session="15c86c6bb9cf6db700dc6aa661b61152")>
+2021-03-16 14:07:37,211 INFO [page_lp_login.py(page_mp_login_success:44)] - 正在调用自媒体登录业务方法，用户名：15628866863 密码：8866863
+2021-03-16 14:07:37,211 INFO [base.py(base_find:23)] - 正在查找元素：('css selector', '#username')
+2021-03-16 14:07:37,223 INFO [base.py(base_input:37)] - 正在对：('css selector', '#username') 元素执行清空操作！
+2021-03-16 14:07:37,272 INFO [base.py(base_input:40)] - 正在对：('css selector', '#username') 元素执行输入:15628866863 操作！
+2021-03-16 14:07:37,346 INFO [base.py(base_find:23)] - 正在查找元素：('css selector', '#password-o')
+2021-03-16 14:07:37,357 INFO [base.py(base_input:37)] - 正在对：('css selector', '#password-o') 元素执行清空操作！
+2021-03-16 14:07:37,390 INFO [base.py(base_input:40)] - 正在对：('css selector', '#password-o') 元素执行输入:8866863 操作！
+2021-03-16 14:07:37,443 INFO [base.py(base_click:47)] - 正在对：('css selector', '#loginBtn') 元素执行点击操作！
+2021-03-16 14:07:37,443 INFO [base.py(base_find:23)] - 正在查找元素：('css selector', '#loginBtn')
+2021-03-16 14:07:38,557 INFO [base.py(__init__:12)] - 正在初始化driver: <selenium.webdriver.chrome.webdriver.WebDriver (session="15c86c6bb9cf6db700dc6aa661b61152")>
+2021-03-16 14:07:38,558 INFO [base.py(base_click:47)] - 正在对：('xpath', '/html/body/header/div/div[2]/div[2]') 元素执行点击操作！
+2021-03-16 14:07:38,558 INFO [base.py(base_find:23)] - 正在查找元素：('xpath', '/html/body/header/div/div[2]/div[2]')
